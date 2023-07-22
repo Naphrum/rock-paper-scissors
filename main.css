@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
+}
+
+body > div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#resultScreen {
+  flex-direction: column;
+}
+#resultScreen img {
+  height: 50vh;
+  margin: 10vh 0;
+  cursor: initial;
+}
+
+body img {
+  animation: grow-shrink 1.5s ease-in-out infinite;
+}
+body img:hover {
+  cursor: pointer;
+}
+
+@keyframes grow-shrink {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
